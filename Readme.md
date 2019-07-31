@@ -6,6 +6,8 @@
 ### Pre-requiste
 - Have xcode installed
 - Have pods installed ([click here](https://cocoapods.org/))
+- Get a coin market api key ([click here](https://pro.coinmarketcap.com/account))
+- Copy `env.example.js` to `env.js` and fill in your api key
 
 ### Installing 
 Follow the steps below.

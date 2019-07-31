@@ -1,11 +1,11 @@
 # CryptoDeck
-> Crypto App listing lastest market values of the most popular tokens.
+> Crypto App listing latest market values of the most popular tokens.
 
 ## Setting up the project
 
 ### Pre-requiste
 - Have xcode installed
-- Have pod installed ([click here](https://cocoapods.org/))
+- Have pods installed ([click here](https://cocoapods.org/))
 
 ### Installing 
 Follow the steps below.

@@ -3,7 +3,6 @@
 const initialState = {};
 
 export default function loadingReducer(state = initialState, action) {
-  // if (action.type === RESET_LOADING_STATUS) return initialState;
 
   const matches = /(.*)_(REQUEST|SUCCESS|FAILURE)/.exec(action.type);
 

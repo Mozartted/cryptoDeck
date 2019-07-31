@@ -3,11 +3,6 @@ import { createStackNavigator, createAppContainer } from 'react-navigation';
 import OnboardingModule from "../modules/onboarding"
 import DashboardModule from "../modules/dashboard"
 
-// import SplashModule from "../modules/splashModule"
-// import AuthModule from "../modules/authModule"
-// import DashboardModule from "../modules/dashboardModule";
-// import WalletModule from "../modules/walletModule";
-
 const AppNavigator = createStackNavigator(
   {
     onboard: OnboardingModule,

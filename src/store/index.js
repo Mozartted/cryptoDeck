@@ -18,7 +18,6 @@ const composeEnhancer =
   (window.__REDUX_DEVTOOLS_EXTENSION__ &&
     window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__) ||
   compose;
-// const composeEnhancer = compose;
 
 export const store = createStore(
   persistedReducer,

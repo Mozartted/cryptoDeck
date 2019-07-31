@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Dashboard Screens Rendering should match to snapshot 1`] = `ShallowWrapper {}`;

@@ -15,7 +15,7 @@ const AppNavigator = createStackNavigator(
   },
   {
     headerMode: 'none',
-    initialRouteName: 'dashboard',
+    initialRouteName: 'onboard',
     defaultNavigationOptions: {
       gesturesEnabled: false,
     },

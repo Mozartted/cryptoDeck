@@ -47,8 +47,8 @@ const setupInterceptors = () => {
     return str.join("&");
   }
   
-  export const formatNumber = (value) => {
-    return new Intl.NumberFormat("en-IN", {
-      maximumFractionDigits: 3
-    }).format(value)
+  export const formatNumber = (value, options = null) => {
+    const currencyOptions = options || { minimumFractionDigits: 2 };
+    const formatter = new Intl.NumberFormat('en-US', currencyOptions);
+    return formatter.format(value)
   }

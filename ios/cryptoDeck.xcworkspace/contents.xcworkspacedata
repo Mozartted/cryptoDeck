@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:cryptoDeck.xcodeproj">
+      location = "group:/Users/mozartted/Projects/Work/Legobox/cryptoDeck/ios/cryptoDeck.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

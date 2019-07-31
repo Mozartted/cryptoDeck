@@ -109,7 +109,7 @@ export default {
   },
   
   // Card
-  cardDefaultBg: '#3E316A',
+  cardDefaultBg: '#fff',
   
   // Color
   brandPrimary: platform === 'ios' ? '#322461' : '#322461',
@@ -256,7 +256,7 @@ export default {
   tabTextColor: '#222222',
 
   // Text
-  textColor: '#B0ABC1',
+  textColor: '#202020',
   inverseTextColor: '#fff',
   noteFontSize: 10,
 
@@ -267,7 +267,7 @@ export default {
   subtitleColor: platform === 'ios' ? '#8e8e93' : '#FFF',
 
   // New Variable
-  titleFontColor: platform === 'ios' ? '#EEEEF3' : '#EEEEF3',
+  titleFontColor: platform === 'ios' ? '#202020' : '#202020',
 
   // Other
   borderRadiusBase: platform === 'ios' ? 5 : 2,

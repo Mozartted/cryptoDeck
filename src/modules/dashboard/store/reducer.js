@@ -7,8 +7,8 @@ const initialState = {
     tokens: {
         data: [],
         status: {},
-        loading: false,
-    }
+    },
+    loading: false,
 }
 
 export default function DashboardReducer (state = initialState, action) {
@@ -16,13 +16,17 @@ export default function DashboardReducer (state = initialState, action) {
         case GET_TOKENS_REQUEST:
           return {...state, loading: true}
         case GET_TOKENS_FAILURE:
-          return state
-          // return {...state, loading: false}
+          // return state
+          return {...state, loading: false}
         case GET_TOKENS_SUCCESS:
           return {
-            ...state,
-            tokens: action.payload,
-            loading:false
+              ...state,
+              tokens: {
+                ...state.tokens,
+                data: [ ...state.tokens.data, ...action.payload.data],
+                status: action.payload.status
+              },
+              loading:false
           }
         default:
           return state

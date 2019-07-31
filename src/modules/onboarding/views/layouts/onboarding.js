@@ -22,8 +22,7 @@ const styles = StyleSheet.create({
 
 const logoUI = StyleSheet.create({
     image: {
-        // marginTop: 100,
-        // marginBottom: 40,
+        resizeMode: "contain",
         marginTop: 80,
         width: 200,
         height: 200
@@ -56,7 +55,9 @@ const slides = [
     title: 'Search and Track',
     icon: "back",
     text: 'track tokens via their ticker',
-    image: (props) => <Onboarding1 {...props} />,
+    // image: (props) => <Onboarding1 {...props} />,
+    image: (props) => <Image source={require("../assets/Onboarding1.png")} {...props} />,
+    imageStyle: logoUI.image,
     // image: (props) => <Image source={require('../../assets/svgs/onboarding/2.png')} {...props}/>,
     titleStyle:{
       color: '#202020',
@@ -69,7 +70,7 @@ const slides = [
       fontSize: 13,
       marginTop: 10
     },
-    imageStyle: styles.image,
+    // imageStyle: styles.image,
     backgroundColor: '#fff',
   },
   {
@@ -88,8 +89,10 @@ const slides = [
       fontSize: 13,
       marginTop: 10
     },
-    image: (props) => <Onboarding2 {...props}/>,
-    imageStyle: styles.image,
+    // image: (props) => <Onboarding2 {...props}/>,
+    image: (props) => <Image source={require("../assets/Onboarding2.png")} {...props} />,
+    imageStyle: logoUI.image,
+    // imageStyle: styles.image,
     backgroundColor: '#fff',
   }
 ];

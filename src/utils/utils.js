@@ -25,13 +25,13 @@ const setupInterceptors = () => {
     error => errorHandler(error)
     )
   }
-  
+
   export const CoinClient = () => {
     setupInterceptors();
     return CoinMarketClient;
   }
-  
-  
+
+
   export const serialize = (obj, prefix) => {
     var str = [],
     p;
@@ -46,9 +46,9 @@ const setupInterceptors = () => {
     }
     return str.join("&");
   }
-  
+
   export const formatNumber = (value, options = null) => {
     const currencyOptions = options || { minimumFractionDigits: 2, minimumIntegerDigits: 21 };
-    const formatter = new Intl.NumberFormat('en', currencyOptions);
+    const formatter = new Intl.NumberFormat('en-US', currencyOptions);
     return formatter.format(value)
   }
